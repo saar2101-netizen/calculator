@@ -20,4 +20,4 @@ def show_menu():
     print("5. Power")
     print("6. Square root")
     print("0. Exit")
-    return input("Enter your choice")
+    return input("Enter your choice: ")
