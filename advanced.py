@@ -1,4 +1,8 @@
-
+"""
+advanced
+==========
+Contains advanced arithmetic operations: exponent, square root, modulo.
+"""
 def power(base, exponent):
 #   number in power
     return base ** exponent

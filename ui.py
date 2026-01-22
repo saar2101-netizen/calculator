@@ -1,4 +1,8 @@
-
+"""
+ui
+=====
+Contains user interface
+"""
 # User interface
 
 def get_number(prompt):
