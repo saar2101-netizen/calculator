@@ -23,5 +23,6 @@ def show_menu():
     print("4. Divide")
     print("5. Power")
     print("6. Square root")
+    print("7. factorial")
     print("0. Exit")
     return input("Enter your choice: ")

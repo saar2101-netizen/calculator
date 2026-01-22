@@ -1,5 +1,5 @@
 from operations import add, subtract, multiply, divide
-from advanced import power, square_root
+from advanced import power, square_root, factorial
 from ui import get_number,show_menu
 
 
@@ -32,6 +32,10 @@ def main():
         elif choice == "6":
             num = get_number("Please enter the number: ")
             print(f"The result is {square_root(num)}")
+
+        elif choice == "7":
+            num = get_number("Please enter a number: ")
+            print(f"The result is {factorial(num)}")
 
         else:
             print("ERROR: choice not valid!")
