@@ -3,7 +3,7 @@ from advanced import power, square_root, factorial
 from ui import get_number,show_menu
 from history import add_to_history, show_history, clear_history
 from constants import show_constants
-
+from geometry import circle_area, rectangle_area, triangle_area
 
 
 
@@ -63,9 +63,29 @@ def main():
             show_constants()
 
         elif choice == "9":
-            show_history()
+            num = get_number("Please enter the radius: ")
+            result = circle_area(num)
+            print(f"The radius is {result}")
+            add_to_history(f"{num}", {result})
 
         elif choice == "10":
+            num1 = get_number("Please enter the width: ")
+            num2 = get_number("Please enter the height: ")
+            result = rectangle_area(num1, num2)
+            print(f"The result is {result}")
+            add_to_history(f"{num1} * {num2}", result)
+
+        elif choice == "11":
+            num1 = get_number("Please enter the base: ")
+            num2 = get_number("Please enter the height: ")
+            result = triangle_area(num1, num2)
+            print(f"The result is {result}")
+            add_to_history(f"({num1} * {num2}) / 2", result)
+
+        elif choice == "12":
+            show_history()
+
+        elif choice == "13":
             clear_history()
 
         else:
