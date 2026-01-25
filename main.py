@@ -18,7 +18,9 @@ def main():
         choice = show_menu()
 
         if choice == "0":
-            print("Good bye")
+            print("╔════════════════════════════╗")
+            print("║         GOOD BYE           ║")
+            print("╚════════════════════════════╝")
             break
 
         if choice in ["1","2","3","4","5"]:
