@@ -51,10 +51,10 @@ def main():
             print(f"The result is {factorial(num)}")
             add_to_history(f"{num}", factorial(num))
 
-        elif choice == "8":
+        elif choice == "9":
             show_history()
 
-        elif choice == "9":
+        elif choice == "10":
             clear_history()
 
         else:
