@@ -32,5 +32,7 @@ def show_menu():
     print("---History---")
     print("12. show history")
     print("13. clear history")
+    print("14. save history")
+    print("15. load history")
     print("0. Exit")
     return input("Enter your choice: ")

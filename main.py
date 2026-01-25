@@ -1,7 +1,7 @@
 from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from ui import get_number,show_menu
-from history import add_to_history, show_history, clear_history
+from history import add_to_history, show_history, clear_history, save_history, load_history
 from constants import show_constants
 from geometry import circle_area, rectangle_area, triangle_area
 
@@ -87,6 +87,12 @@ def main():
 
         elif choice == "13":
             clear_history()
+
+        elif choice == "14":
+            save_history()
+
+        elif choice == "15":
+            load_history()
 
         else:
             print("ERROR: choice not valid!")
