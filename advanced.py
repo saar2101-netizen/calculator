@@ -24,6 +24,7 @@ def factorial(n):
     if n < 0:
         return "ERROR: There is no factorial for negative numbers "
     result = 1
+    n = int(n)
     for i in range(1, n + 1):
         result *= i
     return result
