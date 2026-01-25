@@ -2,10 +2,16 @@ from operations import add, subtract, multiply, divide
 from advanced import power, square_root, factorial
 from ui import get_number,show_menu
 from history import add_to_history, show_history, clear_history
+from constants import show_constants
 
 
-print("Welcome to calculator")
-print("==============================")
+
+
+print("╔════════════════════════════╗")
+print("║    Welcome to calculator   ║")
+print("║      version 4.0           ║")
+print("╚════════════════════════════╝")
+
 
 def main():
     while True:
@@ -50,6 +56,9 @@ def main():
             num = get_number("Please enter a number: ")
             print(f"The result is {factorial(num)}")
             add_to_history(f"{num}", factorial(num))
+
+        elif choice == "8":
+            show_constants()
 
         elif choice == "9":
             show_history()
