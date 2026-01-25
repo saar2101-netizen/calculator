@@ -12,4 +12,3 @@ def show_constants():
     print(f"π (PI) = {PI}")
     print(f"e (Euler) = {E}")
     print(f"φ (golden ratio) = {GOLDEN_RATIO}")
-    
