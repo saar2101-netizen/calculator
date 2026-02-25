@@ -4,6 +4,7 @@ from ui import get_number,show_menu
 from history import add_to_history, show_history, clear_history, save_history, load_history
 from constants import show_constants
 from geometry import circle_area, rectangle_area, triangle_area
+import time
 
 
 
@@ -96,6 +97,6 @@ def main():
 
         else:
             print("ERROR: choice not valid!")
-
+        time.sleep(0.5)
 if __name__ == "__main__":
     main()
