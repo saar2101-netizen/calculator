@@ -97,6 +97,6 @@ def main():
 
         else:
             print("ERROR: choice not valid!")
-        time.sleep(0.5)
+        time.sleep(0.8)
 if __name__ == "__main__":
     main()
